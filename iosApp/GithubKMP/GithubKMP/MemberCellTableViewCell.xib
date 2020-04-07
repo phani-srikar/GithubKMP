@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="ttS-bC-3uS" customClass="MemberCellTableViewCell" customModule="GithubKMP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ttS-bC-3uS" id="D4r-xI-w26">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9rZ-5l-vLi">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="4GT-J0-1no"/>
+                            <constraint firstAttribute="width" constant="80" id="H4P-cA-eS5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wac-f4-Fb8">
+                        <rect key="frame" x="88" y="18" width="307" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wac-f4-Fb8" firstAttribute="leading" secondItem="9rZ-5l-vLi" secondAttribute="trailing" constant="8" id="1Ft-mc-079"/>
+                    <constraint firstItem="wac-f4-Fb8" firstAttribute="leading" secondItem="9rZ-5l-vLi" secondAttribute="trailing" constant="8" id="4c2-RM-AvU"/>
+                    <constraint firstAttribute="trailing" secondItem="wac-f4-Fb8" secondAttribute="trailing" constant="19" id="BlJ-jP-Exa"/>
+                    <constraint firstAttribute="bottom" secondItem="9rZ-5l-vLi" secondAttribute="bottom" id="Jqp-Fg-UeI"/>
+                    <constraint firstAttribute="bottom" secondItem="wac-f4-Fb8" secondAttribute="bottom" constant="16" id="M6K-Kf-1er"/>
+                    <constraint firstItem="9rZ-5l-vLi" firstAttribute="top" secondItem="D4r-xI-w26" secondAttribute="top" id="MDT-6G-AnT"/>
+                    <constraint firstItem="wac-f4-Fb8" firstAttribute="top" secondItem="D4r-xI-w26" secondAttribute="top" constant="18" id="Xkq-8e-dMu"/>
+                    <constraint firstItem="9rZ-5l-vLi" firstAttribute="leading" secondItem="D4r-xI-w26" secondAttribute="leading" id="ejl-Ii-y8Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="memberAvatar" destination="9rZ-5l-vLi" id="4fF-tc-cXU"/>
+                <outlet property="memberLogin" destination="wac-f4-Fb8" id="elQ-Y7-If6"/>
+            </connections>
+            <point key="canvasLocation" x="-872.46376811594212" y="31.473214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
