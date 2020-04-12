@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     public lazy var dataRepository = { MembersDataRepository(api: GitHubApi()) }()
     
     static var appDelegate: AppDelegate {
+        ZipUtils().printContents(pathToZipFile: "/Users/edupp/Desktop/test.gz")
         return UIApplication.shared.delegate as! AppDelegate
     }
 }

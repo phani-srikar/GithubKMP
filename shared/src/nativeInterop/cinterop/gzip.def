@@ -1,0 +1,6 @@
+language = Objective-C
+headers = GZIP.h NSData+GZIP.h
+headerFilter = GZIP.h NSData+GZIP.h
+linkerOpts = -framework GZIP
+compilerOpts = -framework GZIP
+excludeDependentModules = true

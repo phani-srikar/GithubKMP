@@ -34,6 +34,7 @@ class ViewController: UIViewController, MembersView {
         greeting.text = Greeting().greeting()
         membersTableView.register(UINib(nibName: "MemberCellTableViewCell", bundle: nil),
                                   forCellReuseIdentifier: "MemberCell")
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

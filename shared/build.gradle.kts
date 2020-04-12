@@ -48,8 +48,17 @@ kotlin {
         else ::iosX64
 
     iOSTarget("ios") {
+        val main by compilations.getting
+        main.cinterops {
+            val gzip by creating {
+                includeDirs("/Users/edupp/Documents/git_repos/git_aws_codegen/samples_kmp/GithubKMP/shared/src/c_interop/GZIP.framework/Headers")
+            }
+        }
+
         binaries {
             framework {
+                linkerOpts(//"-L/Users/edupp/Documents/git_repos/git_aws_codegen/samples_kmp/GithubKMP/shared/src/c_interop",
+                            "-Fsrc/c_interop", "-ObjC")
                 baseName = "shared"
             }
         }
