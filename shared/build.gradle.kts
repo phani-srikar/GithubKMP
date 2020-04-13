@@ -11,6 +11,7 @@ buildscript {
 }
 plugins {
     id("com.android.library")
+    id("org.jetbrains.kotlin.native.cocoapods")
     kotlin("multiplatform")
     kotlin("plugin.serialization")
 }
@@ -48,10 +49,14 @@ kotlin {
         else ::iosX64
 
     iOSTarget("ios") {
-        binaries {
-            framework {
-                baseName = "shared"
-            }
+        cocoapods {
+            // Configure fields required by CocoaPods.
+            summary = "Test Pod with AFNetworking Dependency from Kotlin/Native using CocoaPods"
+            homepage = "https://github.com/aws-amplify"
+
+            // Configure a dependency on AFNetworking. It will be added in all macOS and iOS targets.
+            pod("AFNetworking", "~> 4.0")
+            frameworkName = "shared"
         }
     }
 

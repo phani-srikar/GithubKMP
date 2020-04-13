@@ -1,0 +1,8 @@
+# Either use_frameworks! or use_modular_headers! must be specified.
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'testcoco' do
+    pod 'shared', :path => '../../shared'
+end

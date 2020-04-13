@@ -1,0 +1,37 @@
+PODS:
+  - AFNetworking (4.0.0):
+    - AFNetworking/NSURLSession (= 4.0.0)
+    - AFNetworking/Reachability (= 4.0.0)
+    - AFNetworking/Security (= 4.0.0)
+    - AFNetworking/Serialization (= 4.0.0)
+    - AFNetworking/UIKit (= 4.0.0)
+  - AFNetworking/NSURLSession (4.0.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.0)
+  - AFNetworking/Security (4.0.0)
+  - AFNetworking/Serialization (4.0.0)
+  - AFNetworking/UIKit (4.0.0):
+    - AFNetworking/NSURLSession
+  - shared (1.0):
+    - AFNetworking (~> 4.0)
+
+DEPENDENCIES:
+  - shared (from `../../shared`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+
+EXTERNAL SOURCES:
+  shared:
+    :path: "../../shared"
+
+SPEC CHECKSUMS:
+  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
+  shared: d11c0b57153f5fc2c1261995dd65ecca4910324a
+
+PODFILE CHECKSUM: 2bdd548456bc571a19e93fdb19017d82cbba974e
+
+COCOAPODS: 1.8.4

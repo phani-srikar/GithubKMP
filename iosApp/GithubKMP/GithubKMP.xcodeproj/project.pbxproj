@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,12 +13,11 @@
 		4375F92D243A9A63006A8AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4375F92B243A9A63006A8AA2 /* Main.storyboard */; };
 		4375F92F243A9A64006A8AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4375F92E243A9A64006A8AA2 /* Assets.xcassets */; };
 		4375F932243A9A64006A8AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4375F930243A9A64006A8AA2 /* LaunchScreen.storyboard */; };
-		4375F93B243AA320006A8AA2 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4375F93A243AA320006A8AA2 /* shared.framework */; };
-		4375F93C243AA320006A8AA2 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4375F93A243AA320006A8AA2 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4375F940243C0664006A8AA2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375F93F243C0664006A8AA2 /* BaseView.swift */; };
 		4375F942243C4B26006A8AA2 /* MemberList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375F941243C4B25006A8AA2 /* MemberList.swift */; };
 		4375F944243C4BCE006A8AA2 /* MemberCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4375F943243C4BCE006A8AA2 /* MemberCellTableViewCell.swift */; };
 		4375F946243C4CBE006A8AA2 /* MemberCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4375F945243C4CBE006A8AA2 /* MemberCellTableViewCell.xib */; };
+		613F5DB69C111A588A0509F3 /* Pods_GithubKMP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23570F44BA7B39CB0D384E3 /* Pods_GithubKMP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4375F93C243AA320006A8AA2 /* shared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24C89BB11DA4747A569CCC4B /* Pods-GithubKMP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubKMP.release.xcconfig"; path = "Target Support Files/Pods-GithubKMP/Pods-GithubKMP.release.xcconfig"; sourceTree = "<group>"; };
 		4375F922243A9A63006A8AA2 /* GithubKMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubKMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4375F925243A9A63006A8AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4375F927243A9A63006A8AA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,11 +43,12 @@
 		4375F92E243A9A64006A8AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4375F931243A9A64006A8AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4375F933243A9A64006A8AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4375F93A243AA320006A8AA2 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
 		4375F93F243C0664006A8AA2 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		4375F941243C4B25006A8AA2 /* MemberList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberList.swift; sourceTree = "<group>"; };
 		4375F943243C4BCE006A8AA2 /* MemberCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCellTableViewCell.swift; sourceTree = "<group>"; };
 		4375F945243C4CBE006A8AA2 /* MemberCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCellTableViewCell.xib; sourceTree = "<group>"; };
+		A23570F44BA7B39CB0D384E3 /* Pods_GithubKMP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubKMP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE296E33C5713832D890FB4 /* Pods-GithubKMP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubKMP.debug.xcconfig"; path = "Target Support Files/Pods-GithubKMP/Pods-GithubKMP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,19 +56,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4375F93B243AA320006A8AA2 /* shared.framework in Frameworks */,
+				613F5DB69C111A588A0509F3 /* Pods_GithubKMP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40B23667CD6F7D722C76A8DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE296E33C5713832D890FB4 /* Pods-GithubKMP.debug.xcconfig */,
+				24C89BB11DA4747A569CCC4B /* Pods-GithubKMP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4375F919243A9A63006A8AA2 = {
 			isa = PBXGroup;
 			children = (
 				4375F924243A9A63006A8AA2 /* GithubKMP */,
 				4375F923243A9A63006A8AA2 /* Products */,
 				4375F939243AA320006A8AA2 /* Frameworks */,
+				40B23667CD6F7D722C76A8DE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +111,7 @@
 		4375F939243AA320006A8AA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4375F93A243AA320006A8AA2 /* shared.framework */,
+				A23570F44BA7B39CB0D384E3 /* Pods_GithubKMP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,11 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4375F936243A9A64006A8AA2 /* Build configuration list for PBXNativeTarget "GithubKMP" */;
 			buildPhases = (
-				4375F93E243AA421006A8AA2 /* ShellScript */,
+				D93EA84D2F007316F49B854C /* [CP] Check Pods Manifest.lock */,
 				4375F91E243A9A63006A8AA2 /* Sources */,
 				4375F91F243A9A63006A8AA2 /* Frameworks */,
 				4375F920243A9A63006A8AA2 /* Resources */,
 				4375F93D243AA320006A8AA2 /* Embed Frameworks */,
+				A141B7188441C7A2B8315180 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,7 +187,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4375F93E243AA421006A8AA2 /* ShellScript */ = {
+		A141B7188441C7A2B8315180 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubKMP/Pods-GithubKMP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubKMP/Pods-GithubKMP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubKMP/Pods-GithubKMP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D93EA84D2F007316F49B854C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -184,14 +212,19 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubKMP-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/../../shared/build/xcode-frameworks\"\n./gradlew :shared:build -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -347,12 +380,13 @@
 		};
 		4375F937243A9A64006A8AA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE296E33C5713832D890FB4 /* Pods-GithubKMP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3DRXD72QU;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../shared/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) ";
 				INFOPLIST_FILE = GithubKMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,12 +401,13 @@
 		};
 		4375F938243A9A64006A8AA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C89BB11DA4747A569CCC4B /* Pods-GithubKMP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3DRXD72QU;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../shared/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) ";
 				INFOPLIST_FILE = GithubKMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
